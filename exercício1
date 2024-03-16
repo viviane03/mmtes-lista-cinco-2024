@@ -1,0 +1,15 @@
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/envio-email")
+public class EmailController {
+
+    @GetMapping
+    public String enviarEmail() {
+        // Aqui você pode implementar a lógica de envio de e-mail
+        // Neste exemplo, apenas retornamos uma mensagem de sucesso
+        return "Email enviado com sucesso.";
+    }
+}
